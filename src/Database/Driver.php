@@ -356,7 +356,8 @@ abstract class Driver
      * Returns last id generated for a table or sequence in database
      *
      * @param string|null $table table name or sequence to get last insert value from
-     * @param string|null $column the name of the column representing the primary key
+     * @param string|null $column the name of the column representing the primary key.
+     *   This argument is deprecated and will be removed in 4.0.0.
      * @return string|int
      */
     public function lastInsertId($table = null, $column = null)
